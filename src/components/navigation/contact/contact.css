@@ -1,0 +1,41 @@
+.addressWrapper {
+    position: absolute;
+    top: 43.5%;
+    left: 50.05%;
+    transform: translate(-50%, -50%);
+    height: 45rem;
+    width: 45rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 4rem;
+    text-align: center;
+    color: #505050;
+    animation: appear .5s ease-out;
+    clip-path: polygon(50% 0%, 100% 22.5%, 100% 77.5%, 50% 100%, 0 77.5%, 0 22.5%);
+}
+
+.addressMap {
+    margin-top: 7rem;
+}
+
+.addressMap h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.outerWrapper {
+    position: absolute;
+    top: 43.5%;
+    left: 50.05%;
+    filter: drop-shadow(0 0.5rem 1rem black);
+    transition: all .2s ease-in;
+}

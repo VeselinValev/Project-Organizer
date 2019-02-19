@@ -1,0 +1,72 @@
+.headerWrapper {
+    position: relative;
+    width: 100%;
+    animation: moveTitle 0.5s ease-out;
+}
+
+.title {
+    height: 15rem;
+    width: 65rem;
+    background-color: rgba(255, 255, 255, .6);
+    clip-path: polygon(0 0, 100% 0, 70% 65%, 30% 65%);
+}
+
+.title h2 {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+}
+
+.title h4 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+.titleOuter {
+    display: inline-block;
+    filter: drop-shadow(0 0.5rem 1rem black);
+}
+
+.titleBarInner {
+    position: absolute;
+    height: 5rem;
+    width: 36.4%;
+    background-color: rgba(255, 255, 255, .6);
+    margin-top: 2rem;
+}
+
+.titleBarInner1 {
+    clip-path: polygon(0 0, 79% 0, 100% 100%, 0% 100%);
+}
+
+.titleBarInner2 {
+    clip-path: polygon(21% 0, 100% 0, 100% 100%, 0% 100%);
+    left: 63.6%;
+}
+
+.titleBarOuter {
+    filter: drop-shadow(0 0.5rem 0.5rem black);
+}
+
+.moveAwayTitle {
+    animation-fill-mode: forwards;
+    animation-name: moveUpTitle;
+    animation-duration: 0.5s;
+}
+
+.text {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    color: #505050;
+}
+
+@keyframes moveTitle {
+    0% {
+        transform: translateY(-10rem);
+    }
+}
+
+@keyframes moveUpTitle {
+    100% {
+        transform: translateY(-10rem);
+    }
+}

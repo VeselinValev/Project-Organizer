@@ -1,0 +1,351 @@
+.text {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    color: #505050;
+}
+
+.hex {
+    position: absolute;
+    filter: drop-shadow(0 0.5rem 1rem black);
+    transition: all .2s ease-in;
+}
+
+.hex h3 {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.hex:hover {
+    transform: translateY(-1px);
+}
+
+.hex1 {
+    left: 50.5%;
+    top: 18%;
+    animation: moveHex1 0.5s ease-out;
+}
+
+.hex1 h3 {
+    top: 40%;
+    left: 25%;
+    transform: rotate(25deg);
+}
+
+.hex1:hover {
+    filter: drop-shadow(0 1rem 2rem #fa0000);
+}
+
+.hex1:hover h3 {
+    color: #fa0000;
+}
+
+.hex2 {
+    left: 38.5%;
+    top: 18%;
+    animation: moveHex2 0.5s ease-out;
+}
+
+.hex2 h3 {
+    top: 40%;
+    left: 18%;
+    transform: rotate(-25deg);
+}
+
+.hex2:hover h3 {
+    color: #f5b400;
+}
+
+.hex2:hover {
+    filter: drop-shadow(0 1rem 2rem #f5b400);
+}
+
+.hex3 {
+    left: 56.5%;
+    top: 38%;
+    animation: moveHex3 0.5s ease-out;
+}
+
+.hex3 h3 {
+    top: 40%;
+    left: 20%;
+    transform: rotate(90deg);
+}
+
+.hex3:hover {
+    filter: drop-shadow(0 1rem 2rem #9b0d8f);
+}
+
+.hex3:hover h3 {
+    color: #9b0d8f;
+}
+
+.hex4 {
+    left: 32.5%;
+    top: 38%;
+    animation: moveHex4 0.5s ease-out;
+}
+
+.hex4 h3 {
+    top: 40%;
+    left: 18%;
+    transform: rotate(90deg);
+}
+
+.hex4:hover {
+    filter: drop-shadow(0 1rem 2rem rgba(233, 245, 0, .7));
+}
+
+.hex4:hover h3 {
+    color: #d5e000;
+}
+
+.hex5 {
+    left: 50.5%;
+    top: 58%;
+    animation: moveHex5 0.5s ease-out;
+}
+
+.hex5 h3 {
+    top: 43%;
+    left: 15%;
+    transform: rotate(-25deg);
+}
+
+.hex5:hover {
+    filter: drop-shadow(0 1rem 2rem #098e95);
+}
+
+.hex5:hover h3 {
+    color: #098e95;
+}
+
+.hex6 {
+    left: 38.5%;
+    top: 58%;
+    animation: moveHex6 0.5s ease-out;
+}
+
+.hex6:hover {
+    filter: drop-shadow(0 1rem 2rem rgba(72, 142, 11, 1));
+}
+
+.hex6 h3 {
+    top: 41%;
+    left: 8%;
+    transform: rotate(25deg);
+}
+
+.hex6:hover h3 {
+    color: rgba(72, 142, 11, 1);
+}
+
+.inside {
+    width: 15rem;
+    height: 15rem;
+    background: rgba(255, 255, 255, .6);
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 22.5%, 100% 77.5%, 50% 100%, 0 77.5%, 0 22.5%);
+}
+
+.stripe {
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+}
+
+.stripe1 {
+    left: -73%;
+    top: 60%;
+    transform: rotate(-65deg);
+    background: linear-gradient(to top, #fa0000, #ffb8b8);
+}
+
+.stripe2 {
+    left: 26%;
+    top: 60%;
+    transform: rotate(65deg);
+    background: linear-gradient(to top, #ffe9c7, #f5b400);
+}
+
+.stripe3 {
+    left: -122%;
+    background: linear-gradient(to left top, #9b0d8f, white);
+}
+
+.stripe4 {
+    left: 76%;
+    background: linear-gradient(to top, white, #e9f500);
+
+}
+
+.stripe5 {
+    left: -76%;
+    top: -106%;
+    transform: rotate(65deg);
+    background: linear-gradient(to top, #098e95, #9af4f9);
+}
+
+.stripe6 {
+    left: 25%;
+    top: -108%;
+    transform: rotate(-65deg);
+    background: linear-gradient(to top, #aef471, #488e0b);
+}
+
+.active {
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.active1 {
+    filter: drop-shadow(0 1rem 2rem #fa0000);
+    -webkit-animation-name: moveAwayHex1;
+}
+
+.active1 h3 {
+    color: #fa0000;
+}
+
+.active2 {
+    filter: drop-shadow(0 1rem 2rem #f5b400);
+    -webkit-animation-name: moveAwayHex2;
+}
+
+.active2 h3 {
+    color: #f5b400;
+}
+
+.active3 {
+    filter: drop-shadow(0 1rem 2rem #9b0d8f);
+    -webkit-animation-name: moveAwayHex3;
+}
+
+.active3 h3 {
+    color: #9b0d8f;
+}
+
+.active4 {
+    filter: drop-shadow(0 1rem 2rem #e9f500);
+    -webkit-animation-name: moveAwayHex4;
+}
+
+.active4 h3 {
+    color: #e9f500;
+}
+
+.active5 {
+    filter: drop-shadow(0 1rem 2rem #098e95);
+    -webkit-animation-name: moveAwayHex5;
+}
+
+.active5 h3 {
+    color: #098e95;
+}
+
+.active6 {
+    filter: drop-shadow(0 1rem 2rem rgba(72, 142, 11, 1));
+    -webkit-animation-name: moveAwayHex6;
+}
+
+.active6 h3 {
+    color: rgba(72, 142, 11, 1);
+}
+
+.away1 {
+    -webkit-animation-name: moveAwayHex1;
+}
+
+.away2 {
+    -webkit-animation-name: moveAwayHex2;
+}
+
+.away3 {
+    -webkit-animation-name: moveAwayHex3;
+}
+
+.away4 {
+    -webkit-animation-name: moveAwayHex4;
+}
+
+.away5 {
+    -webkit-animation-name: moveAwayHex5;
+}
+
+.away6 {
+    -webkit-animation-name: moveAwayHex6;
+}
+
+@keyframes moveHex1 {
+    0% {
+        transform: translateX(10rem) translateY(-10rem);
+    }
+}
+
+@keyframes moveHex2 {
+    0% {
+        transform: translateX(-10rem) translateY(-10rem);
+    }
+}
+
+@keyframes moveHex3 {
+    0% {
+        transform: translateX(10rem);
+    }
+}
+
+@keyframes moveHex4 {
+    0% {
+        transform: translateX(-10rem);
+    }
+}
+
+@keyframes moveHex5 {
+    0% {
+        transform: translateX(10rem) translateY(10rem);
+    }
+}
+
+@keyframes moveHex6 {
+    0% {
+        transform: translateX(-10rem) translateY(10rem);
+    }
+}
+
+@-webkit-keyframes moveAwayHex1 {
+    100% {
+        -webkit-transform: translateX(11rem) translateY(-11rem);
+    }
+}
+
+@-webkit-keyframes moveAwayHex2 {
+    100% {
+        -webkit-transform: translateX(-11rem) translateY(-11rem);
+    }
+}
+
+@-webkit-keyframes moveAwayHex3 {
+    100% {
+        -webkit-transform: translateX(16rem);
+    }
+}
+
+@-webkit-keyframes moveAwayHex4 {
+    100% {
+        -webkit-transform: translateX(-16rem);
+    }
+}
+
+@-webkit-keyframes moveAwayHex5 {
+    100% {
+        -webkit-transform: translateX(11rem) translateY(11rem);
+    }
+}
+
+@-webkit-keyframes moveAwayHex6 {
+    100% {
+        -webkit-transform: translateX(-11rem) translateY(11rem);
+    }
+}
+

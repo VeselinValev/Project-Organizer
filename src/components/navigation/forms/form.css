@@ -1,0 +1,106 @@
+
+form {
+    position: absolute;
+    top: 43.5%;
+    left: 50.05%;
+    transform: translate(-50%, -50%);
+    height: 45rem;
+    width: 45rem;
+    background-color: rgba(255,255, 255, 0.6);
+    margin-top: 4rem;
+    text-align: center;
+    color: #505050;
+    animation: appear .5s ease-out;
+    clip-path: polygon(50% 0%, 100% 22.5%, 100% 77.5%, 50% 100%, 0 77.5%, 0 22.5%);
+}
+
+.field {
+    padding-bottom: 1rem;
+}
+
+.textSecondary {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.registerForm input, .loginForm input {
+    height: 2.5rem;
+    width: 50%;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    font-size: 1.6rem;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+input[type=submit] {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: 50%;
+    height: 4rem;
+    background-color: #ff6a69;
+    cursor: pointer;
+    color: #eeeeee;
+    transition: all .2s ease-in;
+}
+
+input[type=submit]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+input[type=submit]:active {
+    transform: translateY(-1px);
+}
+
+form a {
+    height: 7.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.forgottenPass {
+    margin-top: 2rem;
+    color: #505050;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.loginForm input[type=submit] {
+    margin-top: 10rem;
+}
+
+.loginForm {
+    filter: drop-shadow(0 0.5rem 1rem black);
+    transition: all .2s ease-in;
+    position: absolute;
+    top: 43.5%;
+    left: 50.05%;
+}
+.registerForm {
+    filter: drop-shadow(0 0.5rem 1rem black);
+    transition: all .2s ease-in;
+    position: absolute;
+    top: 43.5%;
+    left: 50.05%;
+}
+.fieldWrapper {
+     padding-top: 6rem;
+ }
+.fieldWrapperLogin {
+    padding-top: 6rem;
+}
