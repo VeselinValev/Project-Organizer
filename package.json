@@ -1,12 +1,11 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://veselinvalev.github.io/Project-Organizer/",
+  "private": false,
+  "homepage": "https://veselinvalev.github.io/Project-Organizer",
   "dependencies": {
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
-    "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -31,5 +30,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
