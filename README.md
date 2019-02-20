@@ -1,4 +1,8 @@
-﻿This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+﻿---
+permalink: /index.html
+---
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -67,4 +71,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-https://github.com/VeselinValev/Project-Organizer/blob/master/public/index.html
