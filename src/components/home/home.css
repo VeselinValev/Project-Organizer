@@ -1,0 +1,23 @@
+.homeWrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hideHeader {
+    -webkit-animation-name: hideHeader;
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.headerAndMenu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes hideHeader {
+    100% {
+        -webkit-transform: translateY(-80rem);
+    }
+}

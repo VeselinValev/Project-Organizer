@@ -24,7 +24,7 @@
 .hex1 {
     left: 50.5%;
     top: 18%;
-    animation: moveHex1 0.5s ease-out;
+    animation: moveInHex1 0.5s ease-out;
 }
 
 .hex1 h3 {
@@ -42,9 +42,9 @@
 }
 
 .hex2 {
-    left: 38.5%;
+    left: 38.6%;
     top: 18%;
-    animation: moveHex2 0.5s ease-out;
+    animation: moveInHex2 0.5s ease-out;
 }
 
 .hex2 h3 {
@@ -64,7 +64,7 @@
 .hex3 {
     left: 56.5%;
     top: 38%;
-    animation: moveHex3 0.5s ease-out;
+    animation: moveInHex3 0.5s ease-out;
 }
 
 .hex3 h3 {
@@ -84,7 +84,7 @@
 .hex4 {
     left: 32.5%;
     top: 38%;
-    animation: moveHex4 0.5s ease-out;
+    animation: moveInHex4 0.5s ease-out;
 }
 
 .hex4 h3 {
@@ -104,7 +104,7 @@
 .hex5 {
     left: 50.5%;
     top: 58%;
-    animation: moveHex5 0.5s ease-out;
+    animation: moveInHex5 0.5s ease-out;
 }
 
 .hex5 h3 {
@@ -122,9 +122,9 @@
 }
 
 .hex6 {
-    left: 38.5%;
+    left: 38.6%;
     top: 58%;
-    animation: moveHex6 0.5s ease-out;
+    animation: moveInHex6 0.5s ease-out;
 }
 
 .hex6:hover {
@@ -142,10 +142,10 @@
 }
 
 .inside {
+    position: absolute;
     width: 15rem;
     height: 15rem;
     background: rgba(255, 255, 255, .6);
-    position: absolute;
     clip-path: polygon(50% 0%, 100% 22.5%, 100% 77.5%, 50% 100%, 0 77.5%, 0 22.5%);
 }
 
@@ -177,7 +177,6 @@
 .stripe4 {
     left: 76%;
     background: linear-gradient(to top, white, #e9f500);
-
 }
 
 .stripe5 {
@@ -277,37 +276,157 @@
     -webkit-animation-name: moveAwayHex6;
 }
 
-@keyframes moveHex1 {
+.showHideMenuOuter {
+    background-color: rgb(200, 200, 200);
+    position: absolute;
+    left: 105%;
+    top: 80%;
+    width: 7.5rem;
+    height: 7.5rem;
+    clip-path: polygon(50% 0%, 100% 22.5%, 100% 77.5%, 50% 100%, 0 77.5%, 0 22.5%);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.showHideMenuOuter:hover {
+    background-color: white;
+}
+
+.showHideMenuOuter h3 {
+    position: absolute;
+    width: 100%;
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgba(50, 50, 50, 1);
+    text-align: center;
+}
+
+.showHideMenuAppear {
+    animation: showHideMenuBtnAppear 0.5s ease-in;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.showHideMenu {
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    clip-path: polygon(50% 0%, 100% 22.5%, 100% 77.5%, 50% 100%, 0 77.5%, 0 22.5%);
+    filter: drop-shadow(0 0.1rem 0.2rem black);
+}
+
+.showHideMenu1 {
+    border-left: 10px solid yellow;
+}
+
+.showHideMenu2 {
+    transform: rotate(-64deg) translateX(2px) translateY(-5px);
+    border-left: 10px solid #00d107;
+}
+
+.showHideMenu3 {
+    transform: rotate(-113deg) translateX(3px) translateY(0px);
+    border-left: 10px solid #00d1b5;
+}
+
+.showHideMenu4 {
+    transform: rotate(-180deg) translateX(0px) translateY(-2px);
+    border-left: 10px solid #d100d1;
+}
+
+.showHideMenu5 {
+    transform: rotate(114deg) translateX(3px) translateY(-5px);
+    border-left: 10px solid red;
+    filter: drop-shadow(0 1rem 2rem black);
+}
+
+.showHideMenu6 {
+    transform: rotate(65deg) translateX(3px) translateY(1px);
+    border-left: 10px solid #ffaf2e;
+}
+
+.showHideMenu7 {
+    border-left: 10px solid #fffa66;
+    transform: translateY(-1.1rem);
+}
+
+.disAppearHex1 {
+    -webkit-animation-name: disAppearHex1;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.disAppearHex2 {
+    -webkit-animation-name: disAppearHex2;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.disAppearHex3 {
+    -webkit-animation-name: disAppearHex3;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.disAppearHex4 {
+    -webkit-animation-name: disAppearHex4;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.disAppearHex5 {
+    -webkit-animation-name: disAppearHex5;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.disAppearHex6 {
+    -webkit-animation-name: disAppearHex6;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes showHideMenuBtnAppear {
+    0% {
+        transform: translateX(0rem);
+    }
+    100% {
+        transform: translateX(-20rem);
+    }
+}
+
+@keyframes moveInHex1 {
     0% {
         transform: translateX(10rem) translateY(-10rem);
     }
 }
 
-@keyframes moveHex2 {
+@keyframes moveInHex2 {
     0% {
         transform: translateX(-10rem) translateY(-10rem);
     }
 }
 
-@keyframes moveHex3 {
+@keyframes moveInHex3 {
     0% {
         transform: translateX(10rem);
     }
 }
 
-@keyframes moveHex4 {
+@keyframes moveInHex4 {
     0% {
         transform: translateX(-10rem);
     }
 }
 
-@keyframes moveHex5 {
+@keyframes moveInHex5 {
     0% {
         transform: translateX(10rem) translateY(10rem);
     }
 }
 
-@keyframes moveHex6 {
+@keyframes moveInHex6 {
     0% {
         transform: translateX(-10rem) translateY(10rem);
     }
@@ -346,6 +465,84 @@
 @-webkit-keyframes moveAwayHex6 {
     100% {
         -webkit-transform: translateX(-11rem) translateY(11rem);
+    }
+}
+
+@-webkit-keyframes disAppearHex1 {
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(80em) translateY(-80rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes disAppearHex2 {
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(-80rem) translateY(-80rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes disAppearHex3 {
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(80rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes disAppearHex4 {
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(-80rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes disAppearHex5 {
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(80rem) translateY(80rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes disAppearHex6 {
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(-80rem) translateY(80rem);
+        opacity: 0;
     }
 }
 

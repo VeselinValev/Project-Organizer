@@ -1,0 +1,47 @@
+.textButton {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    color: #505050;
+    font-size: 1.8rem;
+    padding-top: 1.4rem;
+
+}
+
+.btn {
+    position: absolute;
+    display: inline-block;
+    width: 26%;
+    height: 100%;
+    transition: all .2s ease-out;
+}
+
+.btn1 {
+    left: 74%;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem black;
+    border-bottom: 50px solid #fcff4d;
+}
+
+.btn2 {
+    left: 26%;
+}
+
+.btn2:hover {
+    /*background-color: white;*/
+    box-shadow: 0 0.5rem 1rem black;
+    border-bottom: 50px solid limegreen;
+}
+
+.btn3 {
+    left: 52%;
+}
+
+.btn3:hover {
+    /*background-color: white;*/
+    box-shadow: 0 0.5rem 1rem black;
+    border-bottom: 50px solid darkturquoise;
+}
